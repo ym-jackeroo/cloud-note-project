@@ -1,0 +1,55 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .radios-item{
+            display: none;
+        }
+
+        .radios-wrap {
+            border: 1px solid #f1f1f1;
+            border-radius: 4px;
+            padding: 10px;
+            color: #409eff;
+            width: 50px;
+            text-align: center;
+        }
+
+        .radios-item:checked + .radios-wrap{
+            background-color: #409eff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="radios">
+        <label>
+            <input type="radio" class="radios-item" v-model="currentValue">
+            <div class="radios-wrap">
+                <span class="radios-wrap-title">html</span>
+            </div>
+        </label>
+    </div>
+    
+</body>
+<script>
+    data() {
+        return {
+            currentValue: this.value
+        }
+    },
+    watch: {
+        value(val) {
+            this.currentValue = val
+        },
+        currentValue(val) {
+            this.$emit('input', val)
+            this.$emit('change', val)
+        }
+    }
+</script>
+</html> -->
